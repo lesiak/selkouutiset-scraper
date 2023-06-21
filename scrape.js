@@ -3,7 +3,7 @@ const contentElems = Array.from(content.querySelectorAll("h2.yle__article__headi
 
 let s = "";
 contentElems.forEach(c => {
-  if (c.tagName === 'H2') s += '\n';
+  if (c.tagName === 'H2' && s) s += '\n';
   s += c.innerText;
   s += '\n';
 });
