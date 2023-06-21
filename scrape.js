@@ -1,5 +1,5 @@
 const content = document.querySelector(".yle__article__content")
-const contentElems = Array.from(content.querySelectorAll("h2, p"))
+const contentElems = Array.from(content.querySelectorAll("h2.yle__article__heading, p.yle__article__paragraph"))
 
 let s = "";
 contentElems.forEach(c => {
